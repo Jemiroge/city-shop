@@ -1,0 +1,19 @@
+.trans{
+	background: transparent;
+	border-style: solid;	
+
+}
+
+.fondo{
+	background-repeat: no-repeat;
+	background-size: 100%
+
+}
+.blanco{
+	color:white;
+
+}
+
+.radio{
+	border-radius: 50%;	
+}
