@@ -9,7 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-</head>
+  </head>
 
 <body class="container-fluid borverde">
 	
@@ -18,13 +18,12 @@
 	<header class="jumbotron container-fluid" style="height:400px;">
          <h1><span class="badge badge-success float-left display-1" >Ciudad Verde Shop </span></h1>            
 
-		 <div class="btn-group-lg float-right">		    	
-		    
-			    <button type="button" class="btn btn-success">Inicio</button>
+		 <div class="btn-group-lg float-right">  
 			    <button type="button" class="btn btn-success">Crea Tu Tienda</button>
 			    <button type="button" class="btn btn-success">Registrate</button>
 			    <button type="button" class="btn btn-success"><a href="php/login.php" class="blanco">Ingresar</a></button>
 		 </div>
+
            <br><br>
 
 
@@ -36,10 +35,42 @@
 		  <div>
 		  	<h1>
 		  		<span class="badge badge-success float-right">
-				    <button type="button" class="btn btn-success"><a href="#i" class="blanco">Ubicacion</a></button>
-				    <button type="button" class="btn btn-success"><a href="#u" class="blanco">Imagenes</a>
-				    <button type="button" class="btn btn-success"><a href="#m" class="blanco">Mas</a></button>
-				    <button type="button" class="btn btn-success">Contactenos</button>
+				    <button type="button" class="btn btn-success"><a href="#i" class="blanco">Locales</a></button>
+				    <button type="button" class="btn btn-success"><a href="#u" class="blanco">Ubicacion</a>
+				    <button type="button" class="btn btn-success"><a href="#m" class="blanco">Mas</a></button>			   
+										    <!-- Button to Open the Modal -->
+					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+						    Contactenos
+				    </button>
+
+						  <!-- The Modal -->
+						  <div class="modal fade" id="myModal">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						      
+						        <!-- Modal Header -->
+						        <div class="modal-header">
+						          <h4 class="modal-title" style="color:black; ">Para Mayor Información...</h4>
+						          <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        </div>
+						        
+						        <!-- Modal body -->
+						        <div class="modal-body">
+						          <h5 style="color:black; ">correo electronio : miguelio104@hotmail.com</h5>
+						          <h5 style="color:black;">tel:3193163087</h5>
+						          <h5 style="color:black;">Whatsapp<a href="wa.link/374coj" style="color:black;">Link--></a></p>
+
+						        </div>
+						        
+						        <!-- Modal footer -->
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-success" data-dismiss="modal">Cierre</button>
+						        </div>
+						        
+						      </div>
+						    </div>
+						  </div>
+						  
 		        </span>            
 		    </h1>		  
 		   </div>
