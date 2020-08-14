@@ -1,19 +1,32 @@
 .trans{
 	background: transparent;
-	border-style: solid;	
+	border-style: solid;
+	width: 100%;	
 
 }
+
+::placeholder {
+  color: white;
+}
+
 
 .fondo{
-	background-repeat: no-repeat;
+	
 	background-size: 100%;
-
 }
+
 .blanco{
 	color:white;
 
 }
 
 .radio{
-	border-radius: 50%;	
+	border-radius: 10%;
+	height:100px;
+	-webkit-transform: rotate(-2deg);		
+}
+
+.letra{
+	font-size: 100%;
+
 }
