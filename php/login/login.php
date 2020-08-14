@@ -10,7 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body background="../img/login/fondo1.jpg" class="fondo">
+<body background="../img/login/imajpg.jpg" class="fondo">
 	<br><br><br><br>
 	<h1 class="col-2 float-left"><span class="badge badge-success float-left display-1 ">Ciudad Verde Shop </span></h1> 
 	<br><br>
