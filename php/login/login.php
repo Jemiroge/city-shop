@@ -8,24 +8,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
 </head>
 
-<body background="../../img/plogueo/fondo2.jpg" class="jumbotron fondo container-fluid col-4">
-	<br><br><br><br>	
+<body background="../../img/plogueo/1356.jpg" class="jumbotron fondo container-fluid col-4">
+	<br><br>	
 	<div>
-		<h1 class="container-fluid badge badge-success float-left"><span class="letra">Ciudad Verde Shop </span></h1>
-
+		<div class="padding badge badge-success col-12"><h3 class="display-6">Ciudad Verde Shop</h3></div>
 	 
-	 <br><br><br><br>
-
+	 <br><br>
 
 	    <form action="">
 	    <h1 class="badge badge-success display-1 container-fluid">Logueate a </h1>	
 	    <br><br>
 		<input class="trans" type="text" placeholder="Usuario">
 		<br><br>
-		<input class="trans"  type="text" placeholder="Contraseña" >
+		<input class="trans"  type="password" placeholder="Contraseña" >
 		<br><br>
 
 		<button type="button" class="trans btn btn-success "><a class="blanco" href="#i">Ingresar</a></button>		
@@ -38,6 +36,12 @@
 
 	   </form>
    </div>
+
+  <!-- imagenverde -->
+   <a href="https://www.freepik.es/fotos/fondo" target="_blank">Foto de Fondo creado por user3802032 - www.freepik.es</a>
+
+<!-- imagen cascada -->
+   <a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por 4045 - www.freepik.es</a>
 	
 </body>
 </html>

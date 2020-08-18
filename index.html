@@ -8,42 +8,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> -->
 
   </head>
 
-<body class="container-fluid borverde">
+<body class="container-fluid">
 
 
 
 		
-	<header class="container-fluid col-12" style="height:400px;background: silver;">
+	<header class="container-fluid" style="height:320px;">
 
-		<br><br>
+		<br>	
 
-		 <div class="btn-group-lg float-right col-4">  
-			    <button type="button" class="btn btn-success"><a href="php/crearTienda/crearTienda.php" target="_blank" class="blanco">Crea Tu Tienda</a></button>
-			    <button type="button" class="btn btn-success"><a href="php/registrate/registrate.php" target="_blank" class="blanco">Registrate</a></button>
+		<div class="padding badge badge-success"><h3 class="display-5"><span class="badgebadge-success float-right">Ciudad Verde Shop </span></h3></div> 
+
+		 <div class="btn-group-lg float-right">  
+			    
 			    <button type="button" class="btn btn-success"><a href="php/login/login.php" target="_blank" class="blanco">Ingresar</a></button>
+			    <button type="button" class="btn btn-success"><a href="php/registrate/registrate.php" target="_blank" class="blanco">Registrate</a></button>	    
+			    <button type="button" class="btn btn-success"><a href="php/crearTienda/crearTienda.php" target="_blank" class="blanco">Crea Tu Tienda</a></button>
 		 </div>
                 
-                  
-
-            <div class="col-5">
-		      <audio controls=""><source src="mp3/losiento.mp3" type="audio/mpeg" autoplay style="border-radius: 50%; height:100px;"></audio>
-		      	 <div class="padding badge badge-success"><h1><span class="badge badge-success float-left">Ciudad Verde Shop </span></h1></div>
-		   	</div>        
-
-		
-
            <br><br>
+		          
           
-          
-		  <div class="badge badge-success col-12">
+		  <div class="container-fluid badge badge-success col-12" style="height:100px;">
 
-		  	<div class="float-rigth">
-             <h2 class="text-secundary display-2 padding">Tu tienda está aqui <a href="php/crearTienda/crearTienda.php" target="_blank"><img src="img/index/mouse.jpg" style="border-radius: 50%; height:100px;"></a></h2>
-          </div>
+		  	<div class="container-fluid float-rigth">
+             <h2 class="container-fluid text-secundary display-5">Tu tienda está aqui <a href="php/crearTienda/crearTienda.php" target="_blank"><img src="img/index/mouse.jpg" style="border-radius: 50%; height:100px;"></a></h2>
+           </div>
 		  	
 		  		
 				    <button type="button" class="btn btn-success"><a href="#i" class="blanco">Locales</a></button>
@@ -82,7 +76,8 @@
 						    </div>
 						  </div>
 						  
-		    <div class="demo float-right col-5">
+						  
+		    <div class="demo float-right col-4">
 			  <form class="form-search">
 			    <div class="input-group">
 			      <input  maxlength="50" placeholder="Buscar" size="15" type="text" />
@@ -92,51 +87,40 @@
 			</div>      
 		    		  
 		   </div>         
-
-		  
-		  
-
-           <br>
-           <br>
-           <br>
-            <br>
-           <br>
-		    <br>
-           <br>
-		   
-		   
-           
-
+	          
+<!-- <audio controls="" class="float-left"><source src="mp3/losiento.mp3" type="audio/mpeg" autoplay style="border-radius: 50%; height:100px;"></audio> -->
 		  
 </header>
 
-<marquee loop="0" style="background:#28a745;color:white;font-size:50px;border-radius:2%;">
-<div class="col-1 float-left"><h1><span class="badge badge-success float-left display-1" style="border:1px solid black;">Locales</span></h1></div>
+<div  class="container-fluid">
+<marquee  loop="0" style="background:#28a745;color:white;font-size:25px;border-radius:2%;">
+<div class="col-1 float-left"></div>
  <h1 class="badge badge-success">Ingresa a cualquiera de los locales y pide lo que mas te gusta sin salir de casa</h1></marquee>
+ </div>
 
 <aside id="i" class="container-fluid badge fondol col-12 h-300">
 
-			<div class="col-2 float-left badge badge-success"><h3>Licor</h3>
+			<div class="col-2 float-left badge badge-success"><h5>Licor</h5>
             <img src="img/index/locales/pola.jpg"style="width:100%; height:200px;"> 
 			</div>
-			<div class="col-2 badge badge-success float-left"><h3>Panaderia</h3>
+			<div class="col-2 badge badge-success float-left"><h5>Panaderia</h5>
             <img src="img/index/locales/panaderia.jpg" style="width:100%;height:200px;;">
 			</div>
-			<div class="col-2 float-left badge badge-success"><h3>Comidas rapidas</h3>
+			<div class="col-2 float-left badge badge-success"><h5>Comidas rapidas</h5>
             <img src="img/index/locales/comidarapid.jpg" style="width:100%; height:200px;"> 
 			</div>		
-			<div class="col-2 float-left badge badge-success"><h3>Restaurante</h3>
+			<div class="col-2 float-left badge badge-success"><h5>Restaurante</h5>
             <img src="img/index/locales/restaurante.jpg"style="width:100%; height:200px;;"> 
 			</div>
-			<div class="col-2 float-left badge badge-success"><h3>Asadero</h3>
+			<div class="col-2 float-left badge badge-success"><h5>Asadero</h5>
             <img src="img/index/locales/asaderos.jpg"style="width:100%; height:200px;"> 
 			</div>
-			<div class="col-2 float-left badge badge-success"><h3>tecnologia</h3>
+			<div class="col-2 float-left badge badge-success"><h5>tecnologia</h5>
             <img src="img/index/locales/electrodomesticos.jpg"style="width:100%; height:200px;"> 
 			</div>	
 
 
-</aside>	
+</aside>
 
 <aside id="i" class="container-fluid badge badge-success col-12 h-300">
 
@@ -178,6 +162,7 @@
 	</aside>
 
 
+<br>
 
     	 
    
@@ -197,7 +182,7 @@
 	<footer id="m" class="container-fluid borderes  h-200 badge badge-success ">
 		<div class="col-3 float-left">
 			<ul>
-				<h3>Geolocalizacion</h3>
+				<h5>Ubicación</h5>
 				<br>
 				<li>Ubicacion</li>
 				<br>
@@ -210,7 +195,7 @@
 
 		<div class="col-3 float-left">
 			<ul>
-				<h3>Redes sociales</h3>
+				<h5>Redes sociales</h5>
 				<br>
 				<li>Facebook</li>
 				<br>
@@ -223,7 +208,7 @@
 
 		<div class="col-3 float-left">
 			<ul>
-				<h3>Mas...</h3>
+				<h5>Mas...</h5>
 				<br>
 				<li>Preguntas Frecuentes</li>
 				<br>
@@ -236,7 +221,7 @@
 
 		<div class="col-3 float-left">
 			<ul>
-				<h3>Pidelo Por</h3>
+				<h5>Pidelo Por</h5>
 				<br>
 				<li>Rappy</li>
 				<br>

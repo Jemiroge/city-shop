@@ -1,0 +1,16 @@
+.tamaño{
+	font-size: 50px;
+	float: right;
+}
+label {
+color: #28a745;
+
+}
+.bordes{	
+	border-style: solid;
+    border-color: #28a745;
+
+}
+header{
+	height:600px;
+}
