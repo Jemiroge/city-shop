@@ -8,6 +8,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- javascript -->
+    <script src="../../js/crearTienda/creartienda.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> -->
 
   </head>
@@ -20,10 +24,11 @@
 	<header class="bordes">
 
 		<div class="padding badge badge-success"><h3 class="display-5">Ciudad Verde Shop</h3></div> 
+		<a href="../../index.html"><div class="padding badge badge-success btn btn-success float-right"><h3 class="display-5">Volver</h3></div></a>
 		<br><br>
 
 		<div class="col-12 tamaño badge badge-success">
-			<div  class="col-6 tamaño badge badge-warning"><h1>Registro Tienda</h1></div><div class="col-6 tamaño badge badge-success"><h1>Registro Empresa</h1></div>
+			<div id="hd3" name="hd3" class="col-6 tamaño badge badge-warning btn btn-warning"><h1>Registro Tienda</h1></div><div id="hd4" name="hd4" class="col-6 tamaño badge badge-success btn btn-success"><h1>Registro Empresa</h1></div>
 		</div>
 
 			<br><br>
@@ -33,7 +38,9 @@
 			 <h1 class="badge badge-success">Presiona el tipo de comerdsio que usas y diligencia los datos</h1></marquee>
 		 </div>
 		
-		<form action="proceso.php" method="post">
+
+		<!--    empresas  -->
+		<form id="f1" name="f1" action="proceso.php" method="post">
 
 		<div class="col-6 float-left">
            <label for="razon">Rázon social</label><input type="text" id="razon" class="form-control">
@@ -57,7 +64,49 @@
 		</div>
 
 		<div>
-			<br><br><br><br><br><br><br><br><br><br><br><br><hr>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+		</div>
+			
+			
+
+			
+			<div class="col-8"><input type="submit" value="enviar" class="float-right btn btn-success col-6"></div>
+
+		   
+		</form>
+
+
+         <!--    Tienda  -->
+
+		<form id="f2" name="f2" action="proceso.php" method="post">
+
+		<div class="col-6 float-left">
+           <label for="emprendimiento">Emprendimiento</label><input type="text" id="emprendimiento" class="form-control">
+            <label for="numero de contrato">N° contrato</label><input type="text" id="numero de contrato" class="form-control">
+            <label for="nombre de la tienda">Nombre de la tienda</label><input type="text" id="nombre de la tienda" class="form-control">
+            <label for="direccion">Direccion</label><input type="number" id="direccion" class="form-control">
+            <label for="telefono">Telefono</label><input type="number" id="telefono" class="form-control">            
+            
+
+                     
+         </div>
+
+
+          
+				
+
+		<div class="col-6 float-left">
+			 
+			 <label for="rut">Rut</label><input type="number" id="rut" class="form-control">
+			 <label for="representante">Representante de la tienda</label><input type="text" id="representante" class="form-control">
+			 <label for="cedula">Cedula</label><input type="number" id="cedula" class="form-control">
+			 <label for="email">Email</label><input type="email" id="email" class="form-control">
+			 <label for="celular">Celular</label><input type="number" id="celular" class="form-control">
+
+		</div>
+
+		<div>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
 		</div>
 			
 			

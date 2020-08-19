@@ -19,7 +19,8 @@
 		
 	<header class="bordes">
 
-		<div class="padding badge badge-success"><h3 class="display-5">Ciudad Verde Shop</h3></div> 
+		<div class="padding badge badge-success"><h3 class="display-5">Ciudad Verde Shop</h3></div>
+		<a href="../../index.html"><div class="padding badge badge-success btn btn-success float-right"><h3 class="display-5">Volver</h3></div></a> 
 		<br><br>
 
 		<div class="col-12 tamaño badge badge-success">
@@ -74,8 +75,7 @@
 			
 
 			<div>
-			<br><br><br><br><br><br><br><br><br><br><br><br><hr>
-		    </div>
+			<br><br><br><br><br><br><br>
 
 			<!-- <textarea name="descripcion" id="" cols="100" rows="10"></textarea> -->
 			
@@ -87,9 +87,7 @@
 		</form>
 	</header>
 
-   <br>
-
-	<footer id="m" class="container-fluid borderes  h-200 badge badge-success ">
+  	<footer id="m" class="container-fluid borderes  h-200 badge badge-success ">
 		<div class="col-3 float-left">
 			<ul>
 				<h5>Ubicación</h5>
