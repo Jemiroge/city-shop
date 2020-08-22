@@ -1,0 +1,31 @@
+.bordes{
+ border-style: solid;
+ border-color: #28a745;
+ float: left;
+ height:30px;
+
+}
+
+.cuadro{
+	width:99%;
+	height:180px;
+	background: #28a745;	
+	/*border-style: solid;
+    border-color: #28a745;*/
+   /*padding:130px;*/
+
+}
+
+.aua{
+width:98%;
+height:100%;
+border-style: solid;
+border-color: #28a745;
+padding: 10px 10px 10px 10px;
+/* background: green; */
+
+}
+.espacio{
+	padding-left:50%;
+	height:100%;
+}
