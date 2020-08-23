@@ -43,3 +43,8 @@ color: white
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
 
+a li{
+ color:white;
+ list-style:none;
+}
+

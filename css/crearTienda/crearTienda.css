@@ -7,3 +7,8 @@
 header{
 	height:630px;
 }
+
+footer li {
+color:white;
+ list-style:none;
+}
