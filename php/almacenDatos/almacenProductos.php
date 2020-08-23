@@ -17,7 +17,7 @@
     <script src="../../js/almacenarProductos/almacenarProductos.js"></script>
 </head>
 <body class="aua">
-	<header>
+	<header class="">
 		 <div class="col-2 badge badge-success bordes"><</div>
 		 <div class="col-8 badge badge-success bordes">Interfaz Usuario</div>
 		 <div class="col-2 badge badge-success bordes">></div>
