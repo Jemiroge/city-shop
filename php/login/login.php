@@ -1,3 +1,6 @@
+
+<?php include ("../conexion/conexion.php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,15 +23,15 @@
 	 
 	 <br><br>
 
-	   <form  method="post">
+	   <form  method="post" action="loginval.php">
 		    <h1 class="badge badge-success display-1 container-fluid">Logueate a </h1>	
 		    <br><br>
-			<input class="trans" type="text" placeholder="Usuario" id="usuario">
+			<input class="trans" type="text" placeholder="Usuario" id="usuario" name="usuario">
 			<br><br>
-			<input class="trans"  type="password" placeholder="Contraseña" id="contrasena">
+			<input class="trans"  type="password" placeholder="Contraseña" id="contrasena" name="contrasena">
 			<br><br>
-
-			<button type="button" class="trans btn btn-success" onclick=this.form.action="loginval1.php">Ingresar</button>		
+			
+			<button type="submit" class="trans btn btn-success" onclick=this.form.action="loginval.php">Ingresar</button>		
 			<br>
 			<br>
 

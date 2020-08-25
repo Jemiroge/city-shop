@@ -2,7 +2,7 @@
     $servidor ="localhost";
     $nombreusuario="root";
     $password="";
-    $db="city";
+    $db="citygreen";
     $conexion = new mysqli($servidor,$nombreusuario,$password, $db);
     if($conexion->connect_error){
     	die("conexion fallida:". $conexion->connect_error);

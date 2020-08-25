@@ -1,3 +1,9 @@
+<?php
+	session_start();
+	$usuario1=$_SESSION['usuario'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,15 +29,17 @@
 		 <div class="col-2 badge badge-success bordes">></div>
 
 		 <br>
-         
+		          
          <div class="col-4 float-left">.</div>
 		 <div class="col-2 badge badge-success bordes">Usuario:</div>
-		 <div class="col-2 badge badge-success bordes">Usuario</div>
+		 <div class="col-2 badge badge-success bordes"><?php echo $usuario1;?></div>
 		 
 		
 	</header>
 	
-<br><br>	
+<br><br>
+
+
 	<aside class="cuadro">
 		<form action="">
 			<div class="col-5 float-left badge badge-success text-center">Logo <br><br><img src="../../img/index/mouse.jpg" width="50%" height="130" style="border-radius:150px;"></div>
