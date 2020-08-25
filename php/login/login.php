@@ -20,23 +20,22 @@
 	 
 	 <br><br>
 
-	    <form action="">
-	    <h1 class="badge badge-success display-1 container-fluid">Logueate a </h1>	
-	    <br><br>
-		<input class="trans" type="text" placeholder="Usuario">
-		<br><br>
-		<input class="trans"  type="password" placeholder="Contraseña" >
-		<br><br>
+	   <form  method="post">
+		    <h1 class="badge badge-success display-1 container-fluid">Logueate a </h1>	
+		    <br><br>
+			<input class="trans" type="text" placeholder="Usuario" id="usuario">
+			<br><br>
+			<input class="trans"  type="password" placeholder="Contraseña" id="contrasena">
+			<br><br>
 
-		<button type="button" class="trans btn btn-success "><a class="blanco" href="#i">Ingresar</a></button>		
-		<br>
-		<br>
-		<a href="../registrate/registrate.php" class="blanco">Olvide mi contraseña</a>
-		<a href="../registrate/registrate.php" class="blanco">¿Aun no te has registrado? ¡registrate!</a>
-
-        
+			<button type="button" class="trans btn btn-success" onclick=this.form.action="loginval1.php">Ingresar</button>		
+			<br>
+			<br>
 
 	   </form>
+
+	   <a href="../registrate/registrate.php" class="blanco">Olvide mi contraseña</a>
+		<a href="../registrate/registrate.php" class="blanco">¿Aun no te has registrado? ¡registrate!</a>
    </div>
 
   <!-- imagenverde -->
