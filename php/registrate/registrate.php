@@ -34,22 +34,22 @@
 			 <h1 class="badge badge-success">Diligencia tus datos la Creación del usuario</h1></marquee>
 		 </div>
 		
-		<form action="proceso.php" method="post">
-
+		
+      <form action="registratebase.php" method="post">
 			<div class="col-4 float-left">
-			<label for="nombre1">Primer Nombre</label><input type="text" id="nombre1" class="form-control">
-			<label for="nombre2">Segundo Nombre</label><input type="text" id="nombre2" class="form-control">
-			<label for="apellido1">Primer Apellido</label><input type="text" id="apellido1" class="form-control">
-			<label for="apellido2">Segundo Apellido</label><input type="text" id="apellido2" class="form-control">
+			<label for="nombre1">Primer Nombre</label><input type="text" id="nombre1" name="nombre1"class="form-control">
+			<label for="nombre2">Segundo Nombre</label><input type="text" id="nombre2" name="nombre2"class="form-control">
+			<label for="apellido1">Primer Apellido</label><input type="text" id="apellido1" name="apellido1"class="form-control">
+			<label for="apellido2">Segundo Apellido</label><input type="text" id="apellido2" name="apellido2"class="form-control">
 			
 			</div>
 
 			<div class="col-4 float-left">
 
 			
-			<label for="cargo">Cargo</label><input type="text" id="cargo" class="form-control">
-			<label for="cedula">Cedula</label><input type="number" id="cedula" class="form-control">
-			<label for="celular">Celular</label><input type="number" id="celular" class="form-control">
+			<label for="cargo">Cargo</label><input type="text" id="cargo" name="cargo" class="form-control">
+			<label for="cedula">Cedula</label><input type="number" id="cedula" name="cedula" class="form-control">
+			<label for="celular">Celular</label><input type="number" id="celular" name="celular" class="form-control">
 			<label for="celular">Genero</label>
 			<select name="genero" class="form-control" value="">
 			 <option value="value1" selected></option>
@@ -67,10 +67,12 @@
 			</div>
 
 			<div class="col-4 float-right">
-			<label for="email">Email</label><input type="email" id="email" class="form-control">
-			<label for="usuario">Usuario</label><input type="text" id="usuario" class="form-control">
-			<label for="contraseña">Contraseña</label><input type="password" id="contraseña" class="form-control">
-			<label for="confirmar">Confirmar Contraseña</label><input type="password" id="confirmar" class="form-control">
+			<label for="email">Email</label><input type="email" id="email" name="email" class="form-control">
+
+		
+			<label for="usuario">Usuario</label><input type="text" id="usuario" name="usuario" class="form-control">
+			<label for="contrasena">Contraseña</label><input type="password" id="contrasena" name="contrasena"class="form-control">
+			<label for="confirmar1">Confirmar Contraseña</label><input type="password" id="confirmar1" name="confirmar1"class="form-control">
 			</div>	
 			
 
@@ -80,7 +82,7 @@
 			<!-- <textarea name="descripcion" id="" cols="100" rows="10"></textarea> -->
 			
 			
-			<div class="col-8"><input type="submit" value="enviar" class="float-right btn btn-success col-6"></div>
+			<div class="col-8"><input type="submit" value="enviar" onclick=this.form.action="registratebase.php" class="float-right btn btn-success col-6"></div>
 
 		    
 

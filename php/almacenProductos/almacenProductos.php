@@ -1,8 +1,4 @@
-<?php
-	session_start();
-	$usuario1=$_SESSION['usuario'];
 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +28,10 @@
 		          
          <div class="col-4 float-left">.</div>
 		 <div class="col-2 badge badge-success bordes">Usuario:</div>
-		 <div class="col-2 badge badge-success bordes"><?php echo $usuario1;?></div>
+		 <div class="col-2 badge badge-success bordes"><?php
+ include("../conexion/conexion.php");
+ session_start(); $_SESSION['usuario'];
+ ?></div>
 		 
 		
 	</header>

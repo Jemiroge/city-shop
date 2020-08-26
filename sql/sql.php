@@ -8,23 +8,25 @@ create database cityGreen;
 
 CREATE TABLE Registro (
 Idregistro INT auto_increment,
-pnombre VARCHAR(20) NOT NULL,
-snombre VARCHAR(20) NOT NULL,
-papellido VARCHAR(20) NOT NULL,
-sapellido VARCHAR(20) NOT NULL,
-cargo VARCHAR(20) NOT NULL, 
 cedula INT(12) NOT NULL,
-celular VARCHAR(20) NOT NULL,
+nombre1 VARCHAR(20) NOT NULL,
+nombre2 VARCHAR(20) NOT NULL,
+apellido1 VARCHAR(20) NOT NULL,
+apellido2 VARCHAR(20) NOT NULL,
+cargo VARCHAR(20) NOT NULL, 
+celular INT(20) NOT NULL,
 genero VARCHAR(15) NOT NULL,
 email VARCHAR(20) NOT NULL,
-primary key(idregistro),
+primary key(cedula),
+UNIQUE KEY(idregistro),
 UNIQUE KEY(celular),
 UNIQUE KEY(cedula));
+
 
 //creacion tabla Usuario
 CREATE TABLE usuario (
 usuario VARCHAR(20) NOT NULL,
-contraseña VARCHAR(20) NOT NULL,
+contrasena VARCHAR(20) NOT NULL,
 confirmar1 VARCHAR(20) NOT NULL,
 primary key(usuario),
 UNIQUE KEY(usuario));
@@ -39,7 +41,7 @@ drop database cityGreen;
 
 //insertar datos
 
-INSERT INTO usuario (Idregistro,pnombre,snombre,papellido,sapellido,cargo,cedula,celular,genero,email) VALUES ('','','','','','','','','','',);
+
 INSERT INTO usuario (usuario,contraseña,confirmar1) VALUES ('80815886','Jeisson80815886','Jeisson80815886');
 
 
