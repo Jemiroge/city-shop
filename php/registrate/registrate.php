@@ -49,7 +49,7 @@
 			
 			<label for="cargo">Cargo</label><input type="text" id="cargo" name="cargo" class="form-control">
 			<label for="cedula">Cedula</label><input type="number" id="cedula" name="cedula" class="form-control">
-			<label for="celular">Celular</label><input type="number" id="celular" name="celular" class="form-control">
+			<label for="celular">Celular</label><input type="text" id="celular" name="celular" class="form-control">
 			<label for="celular">Genero</label>
 			<select name="genero" class="form-control" value="">
 			 <option value="value1" selected></option>

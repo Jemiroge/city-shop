@@ -1,7 +1,7 @@
 
 <?php
 include("../conexion/conexion.php");
-
+session_start();
 // $conexion=mysqli_connect("localhost","root","","citygreen");
 $usuario= (isset($_POST['usuario'])    ? $_POST['usuario']    : '');
 $contrasena= (isset($_POST['contrasena'])    ? $_POST['contrasena']    : '');
@@ -12,6 +12,9 @@ $result = mysqli_query($conexion,$busqueda);
 
 
 $numero = mysqli_num_rows($result);
+
+   
+$_SESSION['logueado']=$usuario;
 
  echo $usuario;
  echo "<br>";
@@ -28,9 +31,8 @@ echo $numero;
 
 if ($numero>0) 
   {
-           
-           session_start(); $_SESSION['usuario'];
- 		   echo '<script type="text/javascript">alert("BIENVENIDO")</script>';
+          
+      echo '<script type="text/javascript">alert("BIENVENIDO")</script>';
 		   echo "<script type='text/javascript'>";
 		   header("location:../almacenProductos/almacenProductos.php");
 		   echo "</script>";

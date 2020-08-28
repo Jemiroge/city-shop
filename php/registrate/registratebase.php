@@ -23,19 +23,24 @@ $confirmar1= (isset($_POST['confirmar1'])    ? $_POST['confirmar1']    : '');
 $insertar="INSERT INTO registro (cedula,nombre1,nombre2,apellido1,apellido2,cargo,celular,genero,email) VALUES 
                  ('$cedula','$nombre1','$nombre2','$apellido1','$apellido2','$cargo','$celular','$genero','$email')";
 
+$insertar1="INSERT INTO usuario (usuario,contrasena,confirmar1) VALUES ('$usuario','$contrasena','$confirmar1')";                 
+
 if (mysqli_query($conexion, $insertar)) {
-      echo "datos insertados correctamente";
+	
+    echo "<script>alert('datos insertados correctamente'); window.location='registrate.php'</script>";
 } else {
       echo "Error: " . $insertar . "<br>" . mysqli_error($conexion);
+      
 }
 //mysqli_close($conexion);
 
 
 
-$insertar1="INSERT INTO usuario (usuario,contrasena,confirmar1) VALUES ('$usuario','$contrasena','$confirmar1')";
+
 
 if (mysqli_query($conexion, $insertar1)) {
-      echo "datos insertados correctamente";
+
+      echo "<script>alert('datos insertados correctamente'); window.location='registrate.php'</script>";
       
 } else {
       echo "Error: " . $insertar1 . "<br>" . mysqli_error($conexion);
@@ -43,8 +48,13 @@ if (mysqli_query($conexion, $insertar1)) {
 mysqli_close($conexion);
 
 
-echo '<script type="text/javascript">alert("datos insertados correctamente")</script>';
- echo header("location:registrate.php");
+// echo '<script type="text/javascript">alert("datos insertados correctamente")</script>';
+
+// echo "<script>alert('Mensaje'); window.location='registrate.php'</script>";
+
+
+
+ // echo header("location:registrate.php");
  
 
 // $insertar="INSERT INTO registro(Idregistro,cedula,pnombre,snombre,papellido,sapellido,cargo,celular,genero,email) VALUES ('$cedula',$nombre1','$nombre2','$apellido1','$apellido2','$cargo','$celular','$genero',$email')";

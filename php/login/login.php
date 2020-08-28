@@ -1,6 +1,7 @@
 
-<?php include ("../conexion/conexion.php");
- ?>
+<?php session_start(); session_unset(); session_unset(); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +17,10 @@
 
 
 <body background="../../img/plogueo/1356.jpg" class="jumbotron fondo container-fluid col-5">
+
+	 <form action="../../index.html">
+		 <button type="submit" onclick=this.form.action="../../index.html" class="padding badge badge-success btn btn-success float-right col-6">volver</button>
+         </form>
 
 	<br><br>	
 	<div>
@@ -35,6 +40,20 @@
 			<br>
 			<br>
 
+			<?php include ("../conexion/conexion.php");
+						/*session_start();
+						session_id();
+						session_name()
+						session_register(name);
+						session_unset();
+						session_destroy();*/
+						// session_start();
+						// $_SESSION['logueado']= "perro";
+
+						
+						
+						?>
+
 	   </form>
 
 	   <a href="../registrate/registrate.php" class="blanco">Olvide mi contraseña</a>
@@ -46,9 +65,7 @@
 
 <!-- imagen cascada -->
    <a href='https://www.freepik.es/fotos/fondo'>Foto de Fondo creado por 4045 - www.freepik.es</a>
-
-   
+        
 	
 </body>
-<a href="../../index.html"><div class="padding badge badge-success btn btn-success float-right"><h3 class="display-5">Volver</h3></div></a>
 </html>
