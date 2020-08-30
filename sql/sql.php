@@ -1,43 +1,88 @@
 <?php 
 
-//creacion base de datos 
+
 
 create database cityGreen;
 
-//creacion tabla registro
+
 
 CREATE TABLE Registro (
 Idregistro INT auto_increment,
-cedula INT(12) NOT NULL,
+tabla VARCHAR(20) NOT NULL,
+cedula INT(12) NOT NULL, 
 nombre1 VARCHAR(20) NOT NULL,
 nombre2 VARCHAR(20) NOT NULL,
 apellido1 VARCHAR(20) NOT NULL,
 apellido2 VARCHAR(20) NOT NULL,
-cargo VARCHAR(20) NOT NULL, 
-celular VARCHAR(10) NOT NULL,
-genero VARCHAR(15) NOT NULL,
-email VARCHAR(20) NOT NULL,
+genero VARCHAR(15) NOT NULL, 
 primary key(cedula),
 UNIQUE KEY(idregistro),
-UNIQUE KEY(celular),
 UNIQUE KEY(cedula));
 
 
-//creacion tabla Usuario
-CREATE TABLE usuario (
+
+CREATE TABLE usuarios (
+tabla VARCHAR(20) NOT NULL,
 usuario VARCHAR(20) NOT NULL,
 contrasena VARCHAR(20) NOT NULL,
 confirmar1 VARCHAR(20) NOT NULL,
 primary key(usuario),
 UNIQUE KEY(usuario));
 
+
+
+CREATE TABLE intereses (
+usuario VARCHAR(20) NOT NULL,	
+interes1 VARCHAR(20) NULL,
+interes2 VARCHAR(20) NULL,
+interes3 VARCHAR(20) NULL,
+interes4 VARCHAR(20) NULL,
+interes5 VARCHAR(20) NULL,
+primary key(usuario),
+UNIQUE KEY(usuario));
+
+
+CREATE TABLE celular (
+tabla VARCHAR(20) NOT NULL,
+usuario INT(12) NOT NULL, 
+celular VARCHAR(10) NOT NULL,
+primary key(usuario),
+UNIQUE KEY(usuario));
+
+
+
+CREATE TABLE email (
+tabla VARCHAR(20) NOT NULL,
+usuario INT(12) NOT NULL, 
+email VARCHAR(20) NOT NULL,
+primary key(usuario),
+UNIQUE KEY(email));
+
+CREATE TABLE fecha( 
+tabla VARCHAR(20) NOT NULL, 
+usuario INT(12) NOT NULL,
+fecha_de_registro DATE,
+UNIQUE key(usuario),
+primary key(usuario));
+
+
 // borrar tabla
 
 drop table Registro;
+drop table usuarios;
+drop table intereses;
+drop table celular;
+drop table email;
+drop table fecha;
+
 
 // borrar base de datos
 
 drop database cityGreen;
+
+// borrar datos base de datos
+
+DELETE FROM registro;
 
 //insertar datos
 

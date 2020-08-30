@@ -1,8 +1,4 @@
-<?php session_start();
 
-$logueado1 =$_SESSION['logueado'];
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +17,14 @@ $logueado1 =$_SESSION['logueado'];
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> -->
 
     <script src="../../js/almacenarProductos/almacenarProductos.js"></script>
+    <?php session_start();
+
+    //mensaje de inicio
+
+     $logueado1 =$_SESSION['logueado'];
+     echo "<script>alert('Ingrese sus datos manualmente desde la interfaz o en modo lista');</script>";
+
+     ?>
 </head>
 <body class="aua">
 	<header class="">
@@ -69,7 +73,7 @@ $logueado1 =$_SESSION['logueado'];
 	<div class="bordes badge badge-success  col-4 cuadro espacio"><img id="imagenPrevisualizacion" width="100%" height="255"></div>
 	
 	    <div class="col-12"><h1 class="badge badge-success bordes col-8	">datos del Producto</h1>
-	    	   <button onclick=this.form.action="../login/login.php" class="col-2 badge badge-success bordes float-right">enviar</button>
+	    	  <button onclick=this.form.action="../almacenProductos/almacenProductos.php" class="col-2 badge badge-success bordes float-right">enviar</button>
                <h1 class="col-2 badge badge-success bordes">Producto</h1><input type="text" id="producto" class="form-control col-4">
 	           <h1 class="col-2 badge badge-success bordes">Valor</h1><input type="number" id="valor" onchange="sumado();sumado1()"class="form-control col-4">
 	           <h1 class="col-2 badge badge-success bordes">Iva</h1><input type="text" id="iva" value="19%" disabled class="form-control col-4">

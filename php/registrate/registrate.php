@@ -10,6 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/> -->
 
+    <script src="../../js/registrate/registrate.js"></script>
+
   </head>
 
 <body class="container-fluid">
@@ -37,52 +39,61 @@
 		
       <form action="registratebase.php" method="post">
 			<div class="col-4 float-left">
-			<label for="nombre1">Primer Nombre</label><input type="text" id="nombre1" name="nombre1"class="form-control">
-			<label for="nombre2">Segundo Nombre</label><input type="text" id="nombre2" name="nombre2"class="form-control">
-			<label for="apellido1">Primer Apellido</label><input type="text" id="apellido1" name="apellido1"class="form-control">
-			<label for="apellido2">Segundo Apellido</label><input type="text" id="apellido2" name="apellido2"class="form-control">
+			<label for="nombre1">Primer Nombre</label><input required type="text" id="nombre1" name="nombre1"class="form-control">
+			<label for="nombre2">Segundo Nombre</label><input required type="text" id="nombre2" name="nombre2"class="form-control">
+			<label for="apellido1">Primer Apellido</label><input required type="text" id="apellido1" name="apellido1"class="form-control">
+			<label for="apellido2">Segundo Apellido</label><input required type="text" id="apellido2" name="apellido2"class="form-control">
 			
 			</div>
 
 			<div class="col-4 float-left">
 
 			
-			<label for="cargo">Cargo</label><input type="text" id="cargo" name="cargo" class="form-control">
-			<label for="cedula">Cedula</label><input type="number" id="cedula" name="cedula" class="form-control">
-			<label for="celular">Celular</label><input type="text" id="celular" name="celular" class="form-control">
-			<label for="celular">Genero</label>
+			<label for="cedula">Cedula</label><input required type="number" id="cedula" name="cedula" class="form-control" onchange="subirusuario()">
+			<label for="celular">Celular</label><input required type="text" id="celular" name="celular" class="form-control">
+			<label for="email">Email</label><input required type="email" id="email" name="email" class="form-control">
+			<label for="genero">Genero</label>
 			<select name="genero" class="form-control" value="">
-			 <option value="value1" selected></option>
-			  <option value="value2">Masculino</option> 
-			  <option value="value3" >Femenino</option>
-			  <option value="value4">Undefined</option>
+			 <option value="" selected></option>
+			  <option value="Masculino">Masculino</option> 
+			  <option value="Femenino" >Femenino</option>
+			  <option value="Indefinido">Undefined</option>
 			</select>
 			
 						
-			<!-- <label for="nombre">fecha</label><input type="datatime" id="nombre" class="form-control"> -->
-			<!-- <label for="nombre">color</label><input type="color" id="nombre" class="form-control"> -->
+			<!-- <label for="nombre">fecha</label><input required type="datatime" id="nombre" class="form-control"> -->
+			<!-- <label for="nombre">color</label><input required type="color" id="nombre" class="form-control"> -->
 			
 			<br>
-			<!-- <label for="recordar" class="form-check-label"><input type="checkbox" class="form-check-input"></label> -->
+			<!-- <label for="recordar" class="form-check-label"><input required type="checkbox" class="form-check-input required"></label> -->
 			</div>
 
 			<div class="col-4 float-right">
-			<label for="email">Email</label><input type="email" id="email" name="email" class="form-control">
+			
 
 		
-			<label for="usuario">Usuario</label><input type="text" id="usuario" name="usuario" class="form-control">
-			<label for="contrasena">Contraseña</label><input type="password" id="contrasena" name="contrasena"class="form-control">
-			<label for="confirmar1">Confirmar Contraseña</label><input type="password" id="confirmar1" name="confirmar1"class="form-control">
+			<label for="usuario">Usuario</label><input required type="text" id="usuario" name="usuario" class="form-control" readonly="readonly">
+			<label for="contrasena">Contraseña</label><input required type="password" id="contrasena" name="contrasena"class="form-control">
+			<label for="confirmar1">Confirmar Contraseña</label><input required type="password" id="confirmar1" name="confirmar1"class="form-control" onchange="verificar()">
+			
 			</div>	
 			
 
 			<div>
 			<br><br><br><br><br><br><br>
 
+			<label for="Intereses">Intereses</label>
+			<br>	
+			<label for="Panaderia">(Panaderia)<input  type="checkbox" value="Panaderia" id="Panaderia" name="Panaderia"class="form-control"></label>&nbsp;
+			<label for="Tecnologia">(Tecnologia)<input  type="checkbox" value="Tecnologia" id="Tecnologia" name="Tecnologia"class="form-control"></label>&nbsp;
+			<label for="Restaurante">(Restaurante)<input  type="checkbox" value="Restaurante" id="Restaurante" name="Restaurante"class="form-control"></label>&nbsp;
+			<label for="Licores">(licores)<input  type="checkbox" value="Licores" id="Licores" name="Licores"class="form-control"></label>&nbsp;
+			<label for="Asaderos">(Asaderos)<input  type="checkbox" value="Asaderos" id="Asaderos" name="Asaderos"class="form-control"></label>&nbsp;
+
 			<!-- <textarea name="descripcion" id="" cols="100" rows="10"></textarea> -->
 			
 			
-			<div class="col-8"><input type="submit" value="enviar" onclick=this.form.action="registratebase.php" class="float-right btn btn-success col-6"></div>
+			<div class="col-8"><input type="submit" value="enviar" onclick=this.form.action="registratebase.php" class="float-right btn btn-success col-6" onchange="verificar()"></div>
 
 		    
 

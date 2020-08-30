@@ -1,0 +1,46 @@
+function verificar(contrasena,confirmar1){
+   var contrasena = document.getElementById("contrasena");
+   var confirmar1 = document.getElementById("confirmar1");
+   //var numero3 = document.getElementById("descuento");
+
+   //var suma = numero1 + numero2;
+   //suma = (parseInt(numero1.value)*parseInt(numero2.value)/100+parseInt(numero1.value))-parseInt(numero3.value);
+   alert((contrasena.value));
+
+   if((contrasena.value)==(confirmar1.value)){
+   alert("contraseñas correctas");
+
+   }
+   else if(contrasena!=confirmar1){
+   alert("no coinciden las contraseñas");
+   document.getElementById("confirmar1").value =  "";
+    }
+  
+
+
+   // suma1 = (parseInt(numero3.value)-(parseInt(numero3.value)*parseInt(numero4.value)/100));
+   // document.getElementById("total").value =  Math.round((suma1));
+  //document.writeln(suma); 
+   
+  }
+
+
+  function subirusuario(cedula,usuario){
+   var cedula = document.getElementById("cedula");
+   var usuario = document.getElementById("usuario");
+   //var numero3 = document.getElementById("descuento");
+
+   //var suma = numero1 + numero2;
+   //suma = (parseInt(numero1.value)*parseInt(numero2.value)/100+parseInt(numero1.value))-parseInt(numero3.value);
+   
+   
+   document.getElementById("usuario").value = cedula.value;
+    
+  
+
+
+   // suma1 = (parseInt(numero3.value)-(parseInt(numero3.value)*parseInt(numero4.value)/100));
+   // document.getElementById("total").value =  Math.round((suma1));
+  //document.writeln(suma); 
+   
+  }

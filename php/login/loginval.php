@@ -16,13 +16,13 @@ $numero = mysqli_num_rows($result);
    
 $_SESSION['logueado']=$usuario;
 
- echo $usuario;
- echo "<br>";
- echo $contrasena;
+//  echo $usuario;
+//  echo "<br>";
+//  echo $contrasena;
  
- echo "<br>";
-echo $busqueda;
-echo $numero;
+//  echo "<br>";
+// echo $busqueda;
+// echo $numero;
 
 
 
@@ -31,20 +31,18 @@ echo $numero;
 
 if ($numero>0) 
   {
-          
-      echo '<script type="text/javascript">alert("BIENVENIDO")</script>';
-		   echo "<script type='text/javascript'>";
-		   header("location:../almacenProductos/almacenProductos.php");
-		   echo "</script>";
-		   
-
- 		
+       
+    echo "<script>alert('BIENVENIDO'); window.location='../almacenProductos/almacenProductos.php'</script>";   
+     		
  
-  }else{ 	   
-  	   echo header("location:login.php");
-  	  
+  }
+  else
+  { 	   
+  	   
+    echo "<script>alert('datos insertados iconrrectamentamente'); window.location='login.php'</script>"; 
 		   
   }
+
  	
 
 
