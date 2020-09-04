@@ -43,8 +43,10 @@ color: white
 	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
 }
 
-a li{
- color:white;
- list-style:none;
-}
+/**{
+	border-style: solid;    
+    border-color: #6DFF0A; 
+    
+   
+}*/
 

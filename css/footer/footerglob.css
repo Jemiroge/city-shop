@@ -1,0 +1,20 @@
+
+
+a li{
+ color:green;
+ list-style:none;
+ border-color: #28a745;
+ font-size: 15px;
+
+}
+label{
+
+}
+
+footer{
+	border-style: solid;
+    border-width: 2px;
+    border-color: #6DFF0A;   
+    background: black;
+
+}

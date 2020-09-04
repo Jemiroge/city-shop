@@ -124,62 +124,9 @@
 
    <br>
 
-	
-  	<footer id="m" class="container-fluid borderes badge badge-success" style="height:250px;">
-<div class="col-3 float-left">
-			<ul>
-				<h5>Ubicación</h5>
-				<br><br>
-				<a href="https://goo.gl/maps/ZDixKWBZW3XSVxqF6" title="" target="_blank"><li>Ubicacion</li></a>
-				<br><br><br><br><br>
-				<a href="" title="" target="_blank" data-toggle="modal" data-target="#myModal"><li>Telefono</li></a>
-				<br><br><br><br><br>
-				<a href="" title="" target="_blank" data-toggle="modal" data-target="#myModal"><li>Correo Electronico</li></a>
-				<br><br><br><br><br>
-			</ul>
-		</div>
-
-		<div class="col-3 float-left">
-			<ul>
-				<h5>Sigueme en :</h5>
-				<br>
-				<a href="www.facebook.com/sitioexpress" title="" target="_blank"><li>&nbsp;&nbsp;<img src="../../img/index/footer/Facebook1.ico" style="width:50px;height:50px;"><label>Facebook</label></li></a>
-				
-				<a href="" title="" target="_blank"><li><img src="../../img/index/footer/twitter1.ico" style="width:50px;height:50px;"><label>twitter</label></li></a>
-				
-				<a href="" title="" target="_blank"><li><img src="../../img/index/footer/youtube1.ico" style="width:50px;height:50px;"><label>youtube</label></li></a>
-				
-				<a href="" title="" target="_blank"><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../img/index/footer/Instagram.ico" style="width:50px;height:50px;"><label>instagram</label></li></a>
-				
-			</ul>
-		</div>
-
-		<div class="col-3 float-left">
-			<ul>
-				<h5>Mas...</h5>
-				<br><br>
-				<a href="" title="" target="_blank"><li>Preguntas Frecuentes</li></a>
-				<br><br><br><br><br>
-				<a href="" title="" target="_blank"><li>Como inscribirte</li></a>
-				<br><br><br><br><br>
-				<a href="" title="" target="_blank"><li>Proceso de seleccion</li></a>
-				<br><br><br><br><br>
-			</ul>
-		</div>
-
-		<div class="col-3 float-left">
-			<ul>
-				<h5>Pidelo Por</h5>
-				<br><br>
-				<a href="" title="" target="_blank"><li>Rappy</li></a>
-				<br><br><br><br><br>
-				<a href="" title="" target="_blank"><li>Picap</li></a>
-				<br><br><br><br><br>
-				<a href="" title="" target="_blank"><li>Uber Eat</li></a>
-				<br><br><br><br><br>
-			</ul>
-		</div>
-		</footer>
-	
+   <!-- //footer -->
+				<?php
+				include("../footer/footer.php")
+				?>
 </body>
 </html>
