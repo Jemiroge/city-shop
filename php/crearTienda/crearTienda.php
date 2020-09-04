@@ -35,7 +35,7 @@
 		<div  class="container-fluid">
 			<marquee  loop="0" style="background:#28a745;color:white;font-size:25px;border-radius:2%;">
 			<div class="col-1 float-left"></div>
-			 <h1 class="badge badge-success">Presiona el tipo de comerdsio que usas y diligencia los datos</h1></marquee>
+			 <h1 class="badge badge-success">Presiona el tipo de comercio que usas y diligencia los datos</h1></marquee>
 		 </div>
 		
 
@@ -43,10 +43,11 @@
 		<form id="f1" name="f1" action="proceso.php" method="post">
 
 		<div class="col-6 float-left">
-           <label for="razon">Rázon social</label><input type="text" id="razon" class="form-control">
-           <label for="nit">Nit</label><input type="number" id="nit" class="form-control">
-           <label for="direccion">Direccion</label><input type="text" id="direccion" class="form-control">
-           <label for="telefono">Telefono</label><input type="number" id="telefono" class="form-control">
+           <label for="razon">Rázon social</label><input type="text" id="razon" name="razon" class="form-control">
+           <label for="nit">Nit</label><input type="number" id="nit" name="nit" class="form-control">
+           <label for="direccion">Direccion</label><input type="text" id="direccion" name="direccion" class="form-control">
+           <label for="ciudad">Ciudad</label><input type="text" id="ciudad" name="ciudad" class="form-control">
+           <label for="telefono">Telefono</label><input type="text" id="telefono" name="telefono" class="form-control">
            
          </div>
 
@@ -56,21 +57,22 @@
 
 		<div class="col-6 float-left">
 			 
-			 <label for="representante">Representante legal</label><input type="text" id="representante" class="form-control">
-			 <label for="cedula">Cedula</label><input type="number" id="cedula" class="form-control">
-			 <label for="email">Email</label><input type="email" id="email" class="form-control">
-			 <label for="celular">Celular</label><input type="number" id="celular" class="form-control">
+			 <label for="representante">Representante legal</label><input type="text" id="representante" name="representante" class="form-control">
+			 <label for="cedula">Cedula</label><input type="text" id="cedula" name="cedula" class="form-control">
+			 <label for="email">Email</label><input type="email" id="email" name="email" class="form-control">
+			 <label for="celular">Celular</label><input type="text" id="celular" name="celular" class="form-control">
+			 <label for="imagen">Imagen Logo</label><input type="file" id="imagen" name="imagen" class="form-control">
 
 		</div>
 
 		<div>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</div>
 			
 			
 
 			
-			<div class="col-8"><input type="submit" value="enviar" class="float-right btn btn-success col-6"></div>
+			<div class="col-8"><input type="submit" value="enviar" name="" class="float-right btn btn-success col-6"></div>
 
 		   
 		</form>
@@ -81,11 +83,12 @@
 		<form id="f2" name="f2" action="proceso.php" method="post">
 
 		<div class="col-6 float-left">
-           <label for="emprendimiento">Emprendimiento</label><input type="text" id="emprendimiento" class="form-control">
-            <label for="numero de contrato">N° contrato</label><input type="text" id="numero de contrato" class="form-control">
-            <label for="nombre de la tienda">Nombre de la tienda</label><input type="text" id="nombre de la tienda" class="form-control">
-            <label for="direccion">Direccion</label><input type="number" id="direccion" class="form-control">
-            <label for="telefono">Telefono</label><input type="number" id="telefono" class="form-control">            
+           <label for="emprendimiento">Emprendimiento</label><input type="text" id="emprendimiento" name="emprendimiento" class="form-control">
+            <label for="numerocontrato">N° contrato</label><input type="text" id="numerocontrato" name="numerocontrato" class="form-control">
+            <label for="nombretienda">Nombre de la tienda</label><input type="text" id="nombretienda" name="nombretienda" class="form-control">
+            <label for="direccion1">Direccion</label><input type="text" id="direccion1" name="direccion1" class="form-control">
+            <label for="ciudad1">Ciudad</label><input type="text" id="ciudad1" name="ciudad1" class="form-control">
+            <label for="telefono1">Telefono</label><input type="text" id="telefono1" name="telefono1" class="form-control">            
             
 
                      
@@ -97,16 +100,17 @@
 
 		<div class="col-6 float-left">
 			 
-			 <label for="rut">Rut</label><input type="number" id="rut" class="form-control">
-			 <label for="representante">Representante de la tienda</label><input type="text" id="representante" class="form-control">
-			 <label for="cedula">Cedula</label><input type="number" id="cedula" class="form-control">
-			 <label for="email">Email</label><input type="email" id="email" class="form-control">
-			 <label for="celular">Celular</label><input type="number" id="celular" class="form-control">
+			 <label for="rut"><a href="https://www.rankia.co/blog/dian/2428113-que-rut" target="_blank" title="¿Que es el rut ve a link de este enlace?">Rut (Registro Único Tributario)</a></label><input type="number" id="rut" name="rut" class="form-control">
+			 <label for="representante">Representante de la tienda</label><input type="text" id="representante" name="representante" class="form-control">
+			 <label for="cedula1">Cedula</label><input type="number" id="cedula1" name="cedula1" class="form-control">
+			 <label for="email1">Email</label><input type="email" id="email1" name="email1" class="form-control">
+			 <label for="celular1">Celular</label><input type="text" id="celular1" name="celular1" class="form-control">
+			 <label for="imagen1">Imagen Logo</label><input type="file" id="imagen1" name="imagen1" class="form-control">
 
 		</div>
 
 		<div>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</div>
 			
 			

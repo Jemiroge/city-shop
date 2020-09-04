@@ -1,4 +1,7 @@
+
+
 function verificar(contrasena,confirmar1){
+
    var contrasena = document.getElementById("contrasena");
    var confirmar1 = document.getElementById("confirmar1");
    //var numero3 = document.getElementById("descuento");
@@ -9,12 +12,15 @@ function verificar(contrasena,confirmar1){
 
    if((contrasena.value)==(confirmar1.value)){
    alert("contraseñas correctas");
+   
 
    }
    else if(contrasena!=confirmar1){
    alert("no coinciden las contraseñas");
    document.getElementById("confirmar1").value =  "";
     }
+
+   
   
 
 
@@ -25,8 +31,8 @@ function verificar(contrasena,confirmar1){
   }
 
 
-  function subirusuario(cedula,usuario){
-   var cedula = document.getElementById("cedula");
+  function subirusuario(documento,usuario){  	
+   var documento = document.getElementById("documento");
    var usuario = document.getElementById("usuario");
    //var numero3 = document.getElementById("descuento");
 
@@ -34,7 +40,7 @@ function verificar(contrasena,confirmar1){
    //suma = (parseInt(numero1.value)*parseInt(numero2.value)/100+parseInt(numero1.value))-parseInt(numero3.value);
    
    
-   document.getElementById("usuario").value = cedula.value;
+   document.getElementById("usuario").value = documento.value;
     
   
 
@@ -44,3 +50,11 @@ function verificar(contrasena,confirmar1){
   //document.writeln(suma); 
    
   }
+
+  
+
+
+
+ 
+
+

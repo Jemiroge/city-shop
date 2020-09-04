@@ -1,23 +1,27 @@
 <?php 
 
+// borrar base de datos
 
+drop database cityGreen;
 
 create database cityGreen;
 
 
 
 CREATE TABLE Registro (
-Idregistro INT auto_increment,
+idRegistro INT auto_increment,
+numRegistro VARCHAR(12) NOT NULL,
 tabla VARCHAR(20) NOT NULL,
-cedula INT(12) NOT NULL, 
+tipo VARCHAR(20) NOT NULL,
+documento VARCHAR(12) NOT NULL, 
 nombre1 VARCHAR(20) NOT NULL,
 nombre2 VARCHAR(20) NOT NULL,
 apellido1 VARCHAR(20) NOT NULL,
 apellido2 VARCHAR(20) NOT NULL,
 genero VARCHAR(15) NOT NULL, 
-primary key(cedula),
+primary key(documento),
 UNIQUE KEY(idregistro),
-UNIQUE KEY(cedula));
+UNIQUE KEY(documento));
 
 
 
@@ -44,24 +48,28 @@ UNIQUE KEY(usuario));
 
 CREATE TABLE celular (
 tabla VARCHAR(20) NOT NULL,
-usuario INT(12) NOT NULL, 
+usuario VARCHAR(20) NOT NULL, 
 celular VARCHAR(10) NOT NULL,
 primary key(usuario),
-UNIQUE KEY(usuario));
+UNIQUE KEY(usuario),
+UNIQUE KEY(celular));
 
 
 
 CREATE TABLE email (
 tabla VARCHAR(20) NOT NULL,
-usuario INT(12) NOT NULL, 
-email VARCHAR(20) NOT NULL,
+usuario VARCHAR(20) NOT NULL, 
+email VARCHAR(80) NOT NULL,
 primary key(usuario),
+UNIQUE KEY(usuario),
 UNIQUE KEY(email));
 
 CREATE TABLE fecha( 
 tabla VARCHAR(20) NOT NULL, 
-usuario INT(12) NOT NULL,
-fecha_de_registro DATE,
+usuario VARCHAR(20) NOT NULL,
+fechaDeRegistro DATE,
+hora TIME,
+fecha VARCHAR(30) NOT NULL,
 UNIQUE key(usuario),
 primary key(usuario));
 

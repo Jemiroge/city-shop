@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +39,12 @@
 		
 		
       <form action="registratebase.php" method="post">
+
+                  
+    	
+
 			<div class="col-4 float-left">
+		    <br>		
 			<label for="nombre1">Primer Nombre</label><input required type="text" id="nombre1" name="nombre1"class="form-control">
 			<label for="nombre2">Segundo Nombre</label><input required type="text" id="nombre2" name="nombre2"class="form-control">
 			<label for="apellido1">Primer Apellido</label><input required type="text" id="apellido1" name="apellido1"class="form-control">
@@ -47,11 +53,24 @@
 			</div>
 
 			<div class="col-4 float-left">
+             <br>
+
+            <label for="tipo">Tipo</label>
+			<select name="tipo" class="form-control" value="" class="col-6">
+			 <option value="" selected></option>
+			  <option value="Cedula">Cedula</option> 
+			  <option value="tarjeta identidad">Tarjeta identidad</option>
+			  <option value="cedula extrangeria">Cedula extrangeria</option>
+			  <option value="permiso especial">Permiso especial</option>
+			  
+			</select>
+			
+			<label for="documento">Documento</label><input  required type="text" id="documento" name="documento" class="form-control" onchange="subirusuario()" pattern=".{8,}" minlength="5" maxlength="10">
 
 			
-			<label for="cedula">Cedula</label><input required type="number" id="cedula" name="cedula" class="form-control" onchange="subirusuario()">
+ 
 			<label for="celular">Celular</label><input required type="text" id="celular" name="celular" class="form-control">
-			<label for="email">Email</label><input required type="email" id="email" name="email" class="form-control">
+			<label for="email">Email</label><input required type="email" id="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 			<label for="genero">Genero</label>
 			<select name="genero" class="form-control" value="">
 			 <option value="" selected></option>
@@ -68,20 +87,8 @@
 			<!-- <label for="recordar" class="form-check-label"><input required type="checkbox" class="form-check-input required"></label> -->
 			</div>
 
-			<div class="col-4 float-right">
-			
-
-		
-			<label for="usuario">Usuario</label><input required type="text" id="usuario" name="usuario" class="form-control" readonly="readonly">
-			<label for="contrasena">Contraseña</label><input required type="password" id="contrasena" name="contrasena"class="form-control">
-			<label for="confirmar1">Confirmar Contraseña</label><input required type="password" id="confirmar1" name="confirmar1"class="form-control" onchange="verificar()">
-			
-			</div>	
-			
-
 			<div>
-			<br><br><br><br><br><br><br>
-
+			
 			<label for="Intereses">Intereses</label>
 			<br>	
 			<label for="Panaderia">(Panaderia)<input  type="checkbox" value="Panaderia" id="Panaderia" name="Panaderia"class="form-control"></label>&nbsp;
@@ -89,16 +96,31 @@
 			<label for="Restaurante">(Restaurante)<input  type="checkbox" value="Restaurante" id="Restaurante" name="Restaurante"class="form-control"></label>&nbsp;
 			<label for="Licores">(licores)<input  type="checkbox" value="Licores" id="Licores" name="Licores"class="form-control"></label>&nbsp;
 			<label for="Asaderos">(Asaderos)<input  type="checkbox" value="Asaderos" id="Asaderos" name="Asaderos"class="form-control"></label>&nbsp;
+            </div>	
 
+			<div class="col-4 float-right">
+			
+
+		
+			<label for="usuario">Usuario</label><input required type="text" id="usuario" name="usuario" class="form-control" readonly="readonly">
+			<label for="contrasena">Contraseña</label><input required type="password" id="contrasena" name="contrasena"class="form-control" pattern=".{8,}" title="contraseña mayor a 8 caracteres">
+			
+			<label for="confirmar1">Confirmar Contraseña</label><input required type="password" id="confirmar1" name="confirmar1"class="form-control" pattern=".{8,}" title="contraseña mayor a 8 caracteres" onchange="verificar();subirusuario();">
+             
+					
+			</div>	
+			
+
+			
 			<!-- <textarea name="descripcion" id="" cols="100" rows="10"></textarea> -->
 			
 			
-			<div class="col-8"><input type="submit" value="enviar" onclick=this.form.action="registratebase.php" class="float-right btn btn-success col-6" onchange="verificar()"></div>
+			<div class="col-8"><input type="submit" value="enviar" onclick=this.form.action="registratebase.php" class="float-right btn btn-success col-6"></div>
 
 		    
 
 		</form>
-	</header>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   	<footer id="m" class="container-fluid borderes badge badge-success" style="height:250px;">
 <div class="col-3 float-left">
