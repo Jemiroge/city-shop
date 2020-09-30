@@ -1,7 +1,11 @@
+body{
+	font-family:Star Wars;
+}
 
 .borderes{
 	border-style: solid;
 	padding: 2% 2% 2% 2%;
+	
 }
 
 .borverde{	

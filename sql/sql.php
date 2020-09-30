@@ -2,9 +2,9 @@
 
 // borrar base de datos
 
-drop database cityGreen;
+drop database registroUsuario;
 
-create database cityGreen;
+create database registroUsuario;
 
 
 
@@ -74,15 +74,58 @@ UNIQUE key(usuario),
 primary key(usuario));
 
 
+
+
+
+/// tienda
+create database Registroempresa;	
+
+
+CREATE TABLE registroTienda (
+tabla VARCHAR(15) NOT NULL,	
+idTienda INT auto_increment,
+nombreTienda VARCHAR(30) NOT NULL,
+rut VARCHAR(30) NOT NULL,
+numContrato1 VARCHAR(12) NOT NULL,
+ciudad VARCHAR(20) NOT NULL,
+direccion VARCHAR(20) NOT NULL,
+usuarioRegistro1 VARCHAR(12) NOT NULL,
+emailTienda VARCHAR(80) NOT NULL,
+celularTienda VARCHAR(12) NOT NULL,
+logo BLOB ,
+primary key(rut),
+UNIQUE KEY(rut));
+
+
+CREATE TABLE usuariosCreeSutienda(
+tabla VARCHAR(20) NOT NULL,
+usuarioRegistro1 VARCHAR(20) NOT NULL,
+rut VARCHAR(20) NOT NULL,
+contrasena VARCHAR(20) NOT NULL,
+confirmar1 VARCHAR(20) NOT NULL,
+primary key(usuario),
+UNIQUE KEY(usuario),
+UNIQUE KEY(rut));
+
+
+CREATE TABLE fechaTienda( 
+tabla VARCHAR(20) NOT NULL, 
+rut VARCHAR(20) NOT NULL,
+fechaDeRegistro DATE,
+hora TIME,
+fecha VARCHAR(30) NOT NULL,
+UNIQUE key(rut),
+primary key(rut));
+
+
 // borrar tabla
 
-drop table Registro;
+drop table registro;
 drop table usuarios;
 drop table intereses;
 drop table celular;
 drop table email;
 drop table fecha;
-
 
 // borrar base de datos
 
