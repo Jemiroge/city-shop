@@ -118,6 +118,9 @@ UNIQUE key(rut),
 primary key(rut));
 
 
+
+
+
 // borrar tabla
 
 
@@ -127,6 +130,7 @@ drop table intereses;
 drop table celular;
 drop table email;
 drop table fecha;
+
 
 // borrar base de datos
 
@@ -143,14 +147,30 @@ INSERT INTO usuario (usuario,contraseña,confirmar1) VALUES ('80815886','Jeisson
 
 
 /// RegistroProductos
-drop table RegistroProductos;
+
+
+drop table Registroproductos;
+drop table insertimg;
+
+CREATE TABLE IF NOT EXISTS insertimg (  
+  numRegistro VARCHAR(12) NOT NULL,
+  producto VARCHAR(12) NOT NULL,
+  seleccionarArchivosname VARCHAR(12) NOT NULL,
+  seleccionarArchivostmp longblob NOT NULL,
+  seleccionarArchivossize VARCHAR(12) NOT NULL,			  
+  ruta VARCHAR(50) NOT NULL,
+  creado VARCHAR(30) NOT NULL,
+  PRIMARY KEY (numRegistro)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
 
 CREATE TABLE registroproductos(
 idRegistro INT auto_increment,
 numRegistro VARCHAR(12) NOT NULL,
 usuario VARCHAR(20) NOT NULL,
 nit VARCHAR(20) NOT NULL,
-producto VARCHAR(20) NOT NULL,
+producto VARCHAR(40) NOT NULL,
+descripcion VARCHAR(40) NOT NULL,
 embalaje VARCHAR(10) NOT NULL,
 valor VARCHAR(20) NOT NULL,
 iva VARCHAR(12) NOT NULL, 
@@ -159,7 +179,7 @@ descuento VARCHAR(20) NOT NULL,
 total VARCHAR(20) NOT NULL,
 UNIQUE KEY(idregistro));
 
-drop table Registroproductos;
+
 
 
 
