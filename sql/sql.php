@@ -120,6 +120,7 @@ primary key(rut));
 
 // borrar tabla
 
+
 drop table registro;
 drop table usuarios;
 drop table intereses;
@@ -139,6 +140,26 @@ DELETE FROM registro;
 
 
 INSERT INTO usuario (usuario,contraseña,confirmar1) VALUES ('80815886','Jeisson80815886','Jeisson80815886');
+
+
+/// RegistroProductos
+drop table RegistroProductos;
+
+CREATE TABLE registroproductos(
+idRegistro INT auto_increment,
+numRegistro VARCHAR(12) NOT NULL,
+usuario VARCHAR(20) NOT NULL,
+nit VARCHAR(20) NOT NULL,
+producto VARCHAR(20) NOT NULL,
+embalaje VARCHAR(10) NOT NULL,
+valor VARCHAR(20) NOT NULL,
+iva VARCHAR(12) NOT NULL, 
+tiva VARCHAR(20) NOT NULL,
+descuento VARCHAR(20) NOT NULL,
+total VARCHAR(20) NOT NULL,
+UNIQUE KEY(idregistro));
+
+drop table Registroproductos;
 
 
 

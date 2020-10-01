@@ -6,7 +6,7 @@ session_start();
 $usuario= (isset($_POST['usuario'])    ? $_POST['usuario']    : '');
 $contrasena= (isset($_POST['contrasena'])    ? $_POST['contrasena']    : '');
 
-$busqueda ="SELECT * FROM usuario where usuario ='$usuario' and contrasena ='$contrasena'";
+$busqueda ="SELECT * FROM usuarios where usuario ='$usuario' and contrasena ='$contrasena'";
 $result = mysqli_query($conexion,$busqueda);
 
 

@@ -6,13 +6,13 @@ function sumado(numero1,numero2){
    //var suma = numero1 + numero2;
    //suma = (parseInt(numero1.value)*parseInt(numero2.value)/100+parseInt(numero1.value))-parseInt(numero3.value);
    suma = (parseInt(numero1.value)*parseInt(numero2.value)/100+parseInt(numero1.value));
-   document.getElementById("Tiva").value = (suma);
+   document.getElementById("tiva").value = (suma);
   //document.writeln(suma); 
    
   }
 
   function sumado1(numero3,numero4){
-   var numero3 = document.getElementById("Tiva");
+   var numero3 = document.getElementById("tiva");
    var numero4 = document.getElementById("descuento");
    //var numero3 = document.getElementById("descuento");
 
