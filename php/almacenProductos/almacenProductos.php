@@ -85,7 +85,7 @@
 
 	           <h1 class="col-4 badge badge-success bordes">Descuento %</h1><input required placeholder="10" type="float" id="descuento" name="descuento" value="" maxlength="2" onchange="sumado1()"class="form-control col-8">
 
-	           <h1 class="col-4 badge badge-success bordes">precio total</h1><input required type="float" id="total" name="total" disabled class="form-control col-8">
+	           <h1 class="col-4 badge badge-success bordes">precio total</h1><input required type="number" id="total" name="total" disabled class="form-control col-8">
                 <br>
 	            <button onclick=this.form.action="../almacenProductos/almacenProductosBase.php" class="col-2 badge badge-success bordes float-right">enviar</button>
     </section>   
